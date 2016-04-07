@@ -1,6 +1,4 @@
-package semaphore;
-
-import semaphore.Semaphore;
+package ua.kiev.semaphore;
 
 public class SemaphoreImpl implements Semaphore {
 

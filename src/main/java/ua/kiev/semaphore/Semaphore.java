@@ -1,4 +1,4 @@
-package semaphore;
+package ua.kiev.semaphore;
 
 public interface Semaphore {
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [common-all-tests]" junit="true">
+  <test name="JUnit tests with TestNG suite" preserve-order="false">
+    <classes>
+      <class name="ua.kiev.semaphore.SemaphoreImplTest"/>
+    </classes>
+  </test> <!-- JUnit tests with TestNG suite -->
+</suite> <!-- Failed suite [common-all-tests] -->

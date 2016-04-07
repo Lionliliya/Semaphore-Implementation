@@ -1,6 +1,6 @@
+package ua.kiev.semaphore;
+
 import org.junit.Test;
-import semaphore.Semaphore;
-import semaphore.SemaphoreImpl;
 
 public class SemaphoreImplTest {
 
@@ -25,7 +25,8 @@ public class SemaphoreImplTest {
         @Override
         public void run() {
             int i = 0;
-            while (true) {
+            int count = 10;
+            while (count-- > 0) {
                 System.out.println("Thread Sender" + Thread.currentThread().getName() + " number " + i++);
                 try {
                     this.semaphore.acquire();
@@ -47,7 +48,8 @@ public class SemaphoreImplTest {
         @Override
         public void run() {
             int i = 0;
-            while (true) {
+            int count = 10;
+            while (count-- > 0) {
                 try {
                     this.semaphore.release();
                     System.out.println("Thread Receiver" + Thread.currentThread().getName() + " number " + i++);
